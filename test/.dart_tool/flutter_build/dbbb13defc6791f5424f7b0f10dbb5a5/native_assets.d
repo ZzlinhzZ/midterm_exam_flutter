@@ -1,0 +1,1 @@
+ D:\\Nam\ 4\\ky2\\danentang\\gk\\midterm_exam_flutter\\midterm_exam\\.dart_tool\\flutter_build\\dbbb13defc6791f5424f7b0f10dbb5a5\\native_assets.yaml: 

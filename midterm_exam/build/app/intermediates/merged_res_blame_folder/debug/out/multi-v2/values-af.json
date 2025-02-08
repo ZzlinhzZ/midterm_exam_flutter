@@ -38,17 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Viettel Store\\.gradle\\caches\\transforms-3\\e436391d4eabda697fceffbdd6837f99\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-af\\values-af.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,121",
-                        "endOffsets": "162,284"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Viettel Store\\.gradle\\caches\\transforms-3\\9fced469282ab57b731387e2645b779d\\transformed\\jetified-play-services-base-18.1.0\\res\\values-af\\values.xml",
+                    "source": "C:\\Users\\Viettel Store\\.gradle\\caches\\transforms-3\\5c354eff26465da94d2c995ebbc7f3dc\\transformed\\jetified-play-services-base-18.0.1\\res\\values-af\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -62,6 +52,16 @@
                         "startOffsets": "1021,1128,1284,1410,1520,1670,1792,1913,2158,2324,2432,2589,2716,2855,3009,3075,3138",
                         "endColumns": "106,155,125,109,149,121,120,101,165,107,156,126,138,153,65,62,78",
                         "endOffsets": "1123,1279,1405,1515,1665,1787,1908,2010,2319,2427,2584,2711,2850,3004,3070,3133,3212"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Viettel Store\\.gradle\\caches\\transforms-3\\e436391d4eabda697fceffbdd6837f99\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-af\\values-af.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,121",
+                        "endOffsets": "162,284"
                     }
                 },
                 {

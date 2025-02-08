@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
 /// Example:
@@ -45,6 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '759224187012',
     projectId: 'midtermflutter-956f4',
     authDomain: 'midtermflutter-956f4.firebaseapp.com',
+    databaseURL: 'https://midtermflutter-956f4-default-rtdb.firebaseio.com',
     storageBucket: 'midtermflutter-956f4.firebasestorage.app',
     measurementId: 'G-KDZNZQCVVJ',
   );
@@ -54,6 +56,7 @@ class DefaultFirebaseOptions {
     appId: '1:759224187012:android:c944b6d4b83ce91337ead1',
     messagingSenderId: '759224187012',
     projectId: 'midtermflutter-956f4',
+    databaseURL: 'https://midtermflutter-956f4-default-rtdb.firebaseio.com',
     storageBucket: 'midtermflutter-956f4.firebasestorage.app',
   );
 
@@ -62,7 +65,9 @@ class DefaultFirebaseOptions {
     appId: '1:759224187012:ios:dc2a92725b2083c537ead1',
     messagingSenderId: '759224187012',
     projectId: 'midtermflutter-956f4',
+    databaseURL: 'https://midtermflutter-956f4-default-rtdb.firebaseio.com',
     storageBucket: 'midtermflutter-956f4.firebasestorage.app',
+    iosClientId: '759224187012-01j54puhf6qalsjg4ouutg5i0cojf7qb.apps.googleusercontent.com',
     iosBundleId: 'com.example.midtermExam',
   );
 
@@ -71,7 +76,9 @@ class DefaultFirebaseOptions {
     appId: '1:759224187012:ios:dc2a92725b2083c537ead1',
     messagingSenderId: '759224187012',
     projectId: 'midtermflutter-956f4',
+    databaseURL: 'https://midtermflutter-956f4-default-rtdb.firebaseio.com',
     storageBucket: 'midtermflutter-956f4.firebasestorage.app',
+    iosClientId: '759224187012-01j54puhf6qalsjg4ouutg5i0cojf7qb.apps.googleusercontent.com',
     iosBundleId: 'com.example.midtermExam',
   );
 
@@ -81,6 +88,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '759224187012',
     projectId: 'midtermflutter-956f4',
     authDomain: 'midtermflutter-956f4.firebaseapp.com',
+    databaseURL: 'https://midtermflutter-956f4-default-rtdb.firebaseio.com',
     storageBucket: 'midtermflutter-956f4.firebasestorage.app',
     measurementId: 'G-H405ZZFWWX',
   );

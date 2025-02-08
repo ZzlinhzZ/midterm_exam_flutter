@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "759224187012",
+    "firebase_url": "https://midtermflutter-956f4-default-rtdb.firebaseio.com",
+    "project_id": "midtermflutter-956f4",
+    "storage_bucket": "midtermflutter-956f4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759224187012:android:c944b6d4b83ce91337ead1",
+        "android_client_info": {
+          "package_name": "com.example.midterm_exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759224187012-4nts5akqtqptrmb5slb6iuadphd7sbbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUDiTRfvOh2atvrnRMaj8IDhyrEIKCTWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759224187012-4nts5akqtqptrmb5slb6iuadphd7sbbi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759224187012-01j54puhf6qalsjg4ouutg5i0cojf7qb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.midtermExam"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

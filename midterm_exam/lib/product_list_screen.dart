@@ -1,8 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'product_add_edit_screen.dart';
+import 'login_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class ProductListScreen extends StatelessWidget {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
   Future<void> _confirmDelete(BuildContext context, String productId) async {
     bool? confirm = await showDialog(
       context: context,
@@ -23,10 +27,23 @@ class ProductListScreen extends StatelessWidget {
     );
   }
 
+  Future<void> _logout(BuildContext context) async {
+    await _auth.signOut();
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Danh sách sản phẩm')),
+      appBar: AppBar(
+        title: Text('Danh sách sản phẩm'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () => _logout(context),
+          ),
+        ],
+      ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('products').snapshots(),
         builder: (context, snapshot) {
