@@ -1,3 +1,6 @@
-2025/02/08-20:58:58.369 670 Reusing MANIFEST C:\Users\Viettel Store\AppData\Local\Temp\flutter_tools.ffb7f845\flutter_tools_chrome_device.a22eee98\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2025/02/08-20:58:58.371 670 Recovering log #3
-2025/02/08-20:58:58.372 670 Reusing old log C:\Users\Viettel Store\AppData\Local\Temp\flutter_tools.ffb7f845\flutter_tools_chrome_device.a22eee98\Default\EdgeCoupons/coupons_data.db/000003.log 
+2025/02/17-08:05:08.293 38f4 Reusing MANIFEST C:\Users\Viettel Store\AppData\Local\Temp\flutter_tools.a922305f\flutter_tools_chrome_device.23e74fcf\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2025/02/17-08:05:08.294 38f4 Recovering log #3
+2025/02/17-08:05:08.295 38f4 Reusing old log C:\Users\Viettel Store\AppData\Local\Temp\flutter_tools.a922305f\flutter_tools_chrome_device.23e74fcf\Default\EdgeCoupons/coupons_data.db/000003.log 
+2025/02/17-08:05:08.426 3f74 Level-0 table #5: started
+2025/02/17-08:05:08.433 3f74 Level-0 table #5: 668202 bytes OK
+2025/02/17-08:05:08.438 3f74 Delete type=0 #3

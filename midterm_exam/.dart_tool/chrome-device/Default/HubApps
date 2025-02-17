@@ -54,7 +54,7 @@
                "signal_threshold": 0.5
             },
             "location": "omnibox",
-            "text": "Summarize the page with Copilot",
+            "text": "__MSG_summarize_the_text_page_with_copilot_text__",
             "type": "triggering_config"
          }, {
             "config": {
@@ -64,7 +64,7 @@
                "signal_threshold": 0.5
             },
             "location": "omnibox",
-            "text": "General video highlights",
+            "text": "__MSG_summarize_the_video_page_with_copilot_text__",
             "type": "triggering_config"
          } ],
          "triggers|flight:msUndersideGamingNotification": [ {
@@ -75,7 +75,7 @@
                "signal_name": "IsTwitchNonStreamPage",
                "signal_threshold": 0.5
             },
-            "text": "Learn more about games and streams",
+            "text": "__MSG_gaming_underside_notification_nonstream_text__",
             "type": "triggering_config"
          }, {
             "config": {
@@ -85,7 +85,7 @@
                "signal_name": "IsTwitchSubPage",
                "signal_threshold": 0.5
             },
-            "text": "Learn more about this stream",
+            "text": "__MSG_gaming_underside_notification_text__",
             "type": "triggering_config"
          } ],
          "triggers|flight:msUndersideMsnArticleNotification": [ {
@@ -98,7 +98,7 @@
                "signal_name": "IsMsnArticleUrlFromNtpP1P2",
                "signal_threshold": 0.5
             },
-            "text": "Get AI-powered insights about this page",
+            "text": "__MSG_msn_article_underside_notification_text__",
             "type": "triggering_config"
          } ]
       },
@@ -401,7 +401,7 @@
                "signal_name": "Is1PGameDomain",
                "signal_threshold": 0.5
             },
-            "text": "Click to play games in Microsoft Edge",
+            "text": "__MSG_notification_text_when_hit_domain__",
             "type": "triggering_config"
          } ],
          "triggers|flight:msHubAppsGamesGlobalPop": [ {
@@ -413,7 +413,7 @@
                "signal_name": "Is3PGameDomain",
                "signal_threshold": 0.5
             },
-            "text": "Click to play games in Microsoft Edge",
+            "text": "__MSG_notification_text_when_hit_domain__",
             "type": "triggering_config"
          } ]
       },
@@ -1883,7 +1883,7 @@
                "signal_name": "IsTravelSidebarDomain",
                "signal_threshold": 0.5
             },
-            "text": "Plan your trip",
+            "text": "__MSG_notification_text__",
             "type": "triggering_config"
          } ]
       },

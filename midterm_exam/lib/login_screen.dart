@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'product_list_screen.dart';
 import 'register_screen.dart';
 
@@ -22,34 +22,40 @@ class _LoginScreenState extends State<LoginScreen> {
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
       );
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ProductListScreen()));
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => ProductListScreen()));
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Lỗi: $e")));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text("Lỗi: $e")));
     }
   }
 
-  Future<void> _signInWithGoogle() async {
-    try {
-      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
-      if (googleUser == null) return; // Người dùng hủy đăng nhập
+  // Future<void> _signInWithGoogle() async {
+  //   try {
+  //     final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+  //     if (googleUser == null) return; // Người dùng hủy đăng nhập
 
-      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
-      final AuthCredential credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
+  //     final GoogleSignInAuthentication googleAuth =
+  //         await googleUser.authentication;
+  //     final AuthCredential credential = GoogleAuthProvider.credential(
+  //       accessToken: googleAuth.accessToken,
+  //       idToken: googleAuth.idToken,
+  //     );
 
-      await _auth.signInWithCredential(credential);
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ProductListScreen()));
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Lỗi Google Sign-In: $e")));
-    }
-  }
+  //     await _auth.signInWithCredential(credential);
+  //     Navigator.pushReplacement(context,
+  //         MaterialPageRoute(builder: (context) => ProductListScreen()));
+  //   } catch (e) {
+  //     ScaffoldMessenger.of(context)
+  //         .showSnackBar(SnackBar(content: Text("Lỗi Google Sign-In: $e")));
+  //   }
+  // }
 
-  Future<void> _logout() async {
-    await _auth.signOut();
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
-  }
+  // Future<void> _logout() async {
+  //   await _auth.signOut();
+  //   Navigator.pushReplacement(
+  //       context, MaterialPageRoute(builder: (context) => LoginScreen()));
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -68,15 +74,24 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Chào mừng!", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white)),
+                Text("Chào mừng!",
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white)),
                 SizedBox(height: 20),
                 TextFormField(
                   controller: emailController,
                   decoration: InputDecoration(
-                    filled: true, fillColor: Colors.white, labelText: "Email", border: OutlineInputBorder(),
+                    filled: true,
+                    fillColor: Colors.white,
+                    labelText: "Email",
+                    border: OutlineInputBorder(),
                   ),
                   validator: (value) {
-                    if (value == null || value.isEmpty || !RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
+                    if (value == null ||
+                        value.isEmpty ||
+                        !RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
                       return 'Vui lòng nhập email hợp lệ';
                     }
                     return null;
@@ -87,10 +102,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   controller: passwordController,
                   obscureText: !_passwordVisible,
                   decoration: InputDecoration(
-                    filled: true, fillColor: Colors.white, labelText: "Mật khẩu", border: OutlineInputBorder(),
+                    filled: true,
+                    fillColor: Colors.white,
+                    labelText: "Mật khẩu",
+                    border: OutlineInputBorder(),
                     suffixIcon: IconButton(
                       icon: Icon(
-                        _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                        _passwordVisible
+                            ? Icons.visibility
+                            : Icons.visibility_off,
                       ),
                       onPressed: () {
                         setState(() {
@@ -104,7 +124,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ElevatedButton(
                   onPressed: _login,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white, foregroundColor: Colors.black, padding: EdgeInsets.symmetric(vertical: 12, horizontal: 80),
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 80),
                   ),
                   child: Text("Đăng nhập"),
                 ),
@@ -112,8 +134,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 // SignInButton(Buttons.Google, onPressed: _signInWithGoogle),
                 SizedBox(height: 10),
                 TextButton(
-                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterScreen())),
-                  child: Text("Chưa có tài khoản? Đăng ký", style: TextStyle(color: Colors.white)),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => RegisterScreen())),
+                  child: Text("Chưa có tài khoản? Đăng ký",
+                      style: TextStyle(color: Colors.white)),
                 ),
                 // ElevatedButton(
                 //   onPressed: _logout,
